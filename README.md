@@ -36,4 +36,4 @@ Siga estas etapas para rodar o projeto na sua máquina local:
 
 Você também pode acessar o aplicativo online através do link abaixo:
 
-[Decodificador - Versão Online](https://weather-app-taupe-three-78.vercel.app)
+[Decodificador - Versão Online](https://beater27032001.github.io/DesafioTONE/)
