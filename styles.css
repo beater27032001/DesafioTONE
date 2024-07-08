@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+
+.imagem-container {
+  padding: 2.5rem;
+}
+
+.texto-container {
+  display: flex;
+  flex-direction: column;
+  padding: 10.5rem 5rem 4.5rem 2.5rem;
+}
+
+.texto-container textarea {
+  border: none;
+  outline: none;
+  resize: none;
+  color: white;
+  height: 100%;
+  font-size: 2rem;
+  text-align: justify;
+  background-color: transparent;
+}
+
+.alerta-mensagem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  color: white;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 1rem;
+  font-size: 16px;
+  transition: all 0.3s;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.botao-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+  gap: 24px;
+}
+
+#bt-criptografar {
+  background-color: red;
+  color: white;
+  padding: 1.5rem 4.5rem;
+}
+
+#bt-descriptografar {
+  background-color: rgb(199, 169, 36);
+  color: white;
+  border: 1px solid rgb(199, 169, 36);
+  padding: 1.5rem 4.5rem;
+}
+
+.resultado-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2.5rem;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(255, 255, 255);
+  text-align: center;
+  flex: 1;
+  margin: 2.5rem;
+  position: relative;
+}
+
+.texto-resultado-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.texto-resultado-container img {
+  max-width: 50%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.texto-resultado-container h1,
+.texto-resultado-container p {
+  width: 100%;
+}
+
+.texto-resultado-container h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.texto-resultado-container p {
+  font-size: 1rem;
+  color: black;
+}
+
+#bt-copiar {
+  background-color: red;
+  color: white;
+  padding: 1.5rem 4.5rem;
+  position: absolute;
+  bottom: 1rem;
+  border-radius: 1rem;
+}
+
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+  }
+
+  .imagem-container {
+    padding: 2.5rem;
+  }
+
+  .texto-container {
+    padding: 5rem 2.5rem;
+    flex-grow: 1;
+  }
+
+  .botao-container {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  #bt-criptografar,
+  #bt-descriptografar {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .resultado-container {
+    margin: 0 2.5rem 2.5rem 2.5rem;
+    padding: 1rem;
+    flex: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .texto-resultado-container img {
+    display: none;
+  }
+
+  .texto-resultado-container {
+    width: 100%;
+    padding-bottom: 2.5rem;
+  }
+
+  .texto-resultado-container p {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    margin: 0;
+  }
+
+  #bt-copiar {
+    width: 80%;
+    padding: 1rem;
+    position: relative;
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .botao-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}

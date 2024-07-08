@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Decodificador</title>
+  </head>
+  <body>
+    <main class="main-container">
+      <section class="imagem-container">
+        <img src="./assets/Logo.png" alt="Logo" />
+      </section>
+
+      <section class="texto-container">
+        <textarea placeholder="Digite seu texto" id="texto"></textarea>
+
+        <span class="alerta-mensagem">
+          <img src="./assets/Alert.svg" alt="Alerta" />
+          Apenas letras minúsculas e sem acento!
+        </span>
+
+        <div class="botao-container">
+          <button id="bt-criptografar" disabled>Encriptografar</button>
+          <button id="bt-descriptografar" disabled>Descriptografar</button>
+        </div>
+      </section>
+
+      <section class="resultado-container" id="resultado-container">
+        <div class="texto-resultado-container" id="texto-resultado-container">
+          <img src="./assets/Luffy.png" alt="Imagem ilustrativa" id="imagem-ilustrativa"/>
+          <h1 id="resultado-titulo">Nenhuma mensagem encontrada</h1>
+          <p id="resultado-texto">
+            Digite um texto que você deseja criptografar ou descriptografar.
+          </p>
+        </div>
+        <button id="bt-copiar" style="display: none">Copiar!</button>
+      </section>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
